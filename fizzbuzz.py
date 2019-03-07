@@ -8,4 +8,4 @@ for i in range(0, len(A), 5):
   else:
     A[i] = 'fizzbuzz'
 
-print(''.join(map(str, A)))
+print(' '.join(map(str, A)))
