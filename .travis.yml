@@ -10,6 +10,6 @@ cache: pip
 
 install:
   - pip install -q Django==$DJANGO_VERSION
-  - pip install -r unittests.txt
+  - pip install -r requirements.txt
 
-script: python fizzbuzz.py
+script: python unit_tests.py
