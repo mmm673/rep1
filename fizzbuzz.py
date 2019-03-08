@@ -1,5 +1,5 @@
 #A = list(map(str, input().split()))
-n = int(input())
+
 A = [i+1 for i in range(т)]
 for i in range(1, len(A), 3):
   A[i] = 'fizz'
