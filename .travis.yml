@@ -12,4 +12,4 @@ install:
   - pip install scipy
   - pip install matplotlib
 
-script: python rep1/fizzbuzz.py
+script: python fizzbuzz.py
