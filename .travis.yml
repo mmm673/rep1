@@ -6,7 +6,10 @@ python:
 env:
   - DJANGO_VERSION=1.4.1
 
+cache: pip
+
 install:
   - pip install -q Django==$DJANGO_VERSION
+  - pip install -r unittests.txt
 
 script: python fizzbuzz.py
