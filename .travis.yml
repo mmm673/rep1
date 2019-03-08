@@ -8,8 +8,5 @@ env:
 
 install:
   - pip install -q Django==$DJANGO_VERSION
-  - pip install numpy
-  - pip install scipy
-  - pip install matplotlib
 
 script: python fizzbuzz.py
