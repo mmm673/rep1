@@ -8,7 +8,6 @@ env:
 
 install:
   - pip install -q Django==$DJANGO_VERSION
-  - pip install -r requirements.txt --use-mirrors
   - pip install numpy
   - pip install scipy
   - pip install matplotlib
