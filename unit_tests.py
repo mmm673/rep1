@@ -9,9 +9,10 @@ class TestFizzbuzz(unittest.TestCase):
 		with open('tests.txt') as file:
 			for line in file:
 				nums.append(int(line[:line.find(' ')]))
-				A.append(list(line[line.find(' ') + 1:]))
+				A.append(list(map(str, line[line.find(' ') + 1:].split())))
 		for i in range(len(nums)):
 			f = replace(nums[i])
+			for i in ra
 			self.assertEqual(f, A[i])
 
 if __name__=="__main__":
