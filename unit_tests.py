@@ -8,5 +8,5 @@ class TestFizzbuzz(unittest.TestCase):
     f = replace(5)
     self.assertEqual(f, [1, 2, 'fizz', 4, 'buzz'])
 
-if __name__==”__main__”:
+if __name__=="__main__":
   unittest.main()
