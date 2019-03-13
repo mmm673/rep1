@@ -9,7 +9,7 @@ class TestFizzbuzz(unittest.TestCase):
 		with open('tests.txt') as file:
 			for line in file:
 				nums.append(int(line[:line.find(' ')]))
-				A.append(list(map(str, line[line.find(' ') + 1:].split())))
+				A.append(list(line[line.find(' ') + 1:]))
 		for i in range(len(nums)):
 			f = replace(nums[i])
 			self.assertEqual(f, A[i])
