@@ -16,4 +16,4 @@ class TestFizzbuzz(unittest.TestCase, nums, A):
 			self.assertEqual(f, A[i])
 
 if __name__=="__main__":
-	unittest.main()
+	unittest.main(nums, A)
