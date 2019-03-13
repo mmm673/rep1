@@ -3,13 +3,11 @@
 import unittest
 from fizzbuzz import replace
 
-nums = []
-A = []
-
-file = open('tests.txt', 'r')
-for line in file:
-  nums.append(line[:line.find(' ')])
-  A.append(list(map(str, line[line.find(' '):].split())))
+nums, A = [], []
+with open('tests.txt') as file:
+	for line in file:
+    nums.append(line[:line.find(' ')])
+    A.append(list(map(str, line[line.find(' ') + 1:].split())))
 
 class TestFizzbuzz(unittest.TestCase):
   def test_fizzbuzz(self, nums, A):
