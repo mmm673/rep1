@@ -15,3 +15,6 @@ def replace(A):
     else:
       A[i] = t
   return A
+
+A = replace(['1', '2', '3', '4'])
+print(A)
