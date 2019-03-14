@@ -1,7 +1,7 @@
 def replace(A):
   for i in range(len(A)):
     t = A[i]
-    while A[i] >= 10:
+    while int(A[i]) >= 10:
       sum = 0
       for j in range(len(A[i])):
         sum += int(A[i][j])
