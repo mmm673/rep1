@@ -11,4 +11,4 @@ cache: pip
 install:
   - pip install -q Django==$DJANGO_VERSION
 
-script: python unit_tests.py
+script: python fizzbuzz.py
