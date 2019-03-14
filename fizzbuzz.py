@@ -1,10 +1,17 @@
-def replace(n):
-  A = [str(i+1) for i in range(n)]
-  for i in range(2, len(A), 3):
-    A[i] = 'fizz'
-  for i in range(4, len(A), 5):
-    if A[i] != 'fizz':
+def replace(A):
+  for i in range(len(A)):
+    t = A[i]
+    while int(A[i]) >= 10:
+      sum = 0
+      for j in range(len(A[i])):
+        sum += int(A[i][j])
+      A[i] = sum
+    if (A[i] == 0 or A[i] == 3 or A[i] == 6 or A[i] == 9) and (t[-1] == 0 or t[-1] == 5):
+      A[i] = 'fizzbuzz'
+    elif (A[i] == 0 or A[i] == 3 or A[i] == 6 or A[i] == 9) and (t[-1] != 0 and t[-1] != 5):
+      A[i] = 'fizz'
+    elif (A[i] != 0 and A[i] != 3 and A[i] != 6 and A[i] != 9) and (t[-1] == 0 or t[-1] == 5):
       A[i] = 'buzz'
     else:
-      A[i] = 'fizzbuzz'
+      A[i] = t
   return A
