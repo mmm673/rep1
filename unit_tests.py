@@ -8,7 +8,7 @@ class TestFizzbuzz(unittest.TestCase):
 		nums, A = [], []
 		with open('tests.txt') as file:
 			for line in file:
-				nums.append(list(map(str, line[:line.find(';') + 1].split())))
+				nums.append(list(map(str, line[:line.find(';')].split())))
 				A.append(list(map(str, line[line.find(';') + 1:].split())))
 		for i in range(len(nums)):
 			f = replace(nums[i])
