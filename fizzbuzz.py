@@ -1,6 +1,8 @@
 def replace(A):
   for i in range(len(A)):
     t = A[i]
+    if A[i][0] = '-':
+      A[i] = A[i][1:]
     while len(A[i]) >= 2:
       sum = 0
       for j in range(len(A[i])):
